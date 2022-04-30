@@ -1,0 +1,104 @@
+
+.buttongreen {
+    background-color: #A5F6AB !important;
+    color: white !important;
+}
+.id {
+    height: 500px !important;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+  }
+  
+  #myBtn:hover {
+    color: #d1d1d1;
+  }
+  #loginbox {
+      border-radius: 30px !important;
+     
+  }
+  #imglogin {
+      height: 500px;
+      width: 600px;
+    
+  }
+  #boxright {
+      padding: 30px;
+      background-color: rgba(237, 237, 237, 0.392);
+      margin: 0px !important;
+  }
+  #boxleft {
+      margin: 0px !important;
+  }
+  
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+    background: #ffffff !important;
+
+}
+  main {
+    max-width: 1250px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+.dropdown-menu {
+  border-radius: 15px !important;
+  
+  color: white !important;
+  border:  0px!important;
+  padding: 10px !important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  
+  background-color: #dcdcdc !important;
+  border-radius: 10px;
+}
+.navbar {
+  background-color: #333333 !important;
+  color: #F5F5F7 !important;
+  
+}
+.iconheader {
+  color: rgb(214, 214, 214);
+}
+.colorwhite {
+   color: rgb(214, 214, 214) !important;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: rgb(214, 214, 214) !important;
+}
+.search {
+  background-color:rgb(214, 214, 214) !important  ;
+  border-radius: 20px !important;
+}
+.btn-check:focus+.btn, .btn:focus {
+  outline: none !important; 
+  box-shadow: none !important; 
+}
+.h1, h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin: 30px !important;
+  color: #1D1D1F !important;
+}
+.card {
+  border-radius: 20px !important;
+  background-color: rgb(240, 240, 240) !important;
+}

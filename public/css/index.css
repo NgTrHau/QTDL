@@ -1,0 +1,118 @@
+#banner2 {
+    margin-bottom: 20px;
+  }
+#banner2 img {
+    border-radius: 20px;
+    
+  }
+.products {
+  list-style-type:none;
+}
+.price {
+  font-weight: bold;
+  color: #515457!important;
+  padding-bottom:10px;
+  font-size: 18px;
+}
+.btn-custom {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff ;
+  background-color: #494949 ;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-favorite {
+  display: inline-block;
+  padding: 7px;
+  border: 1px solid rgb(173, 0, 0);
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  color: rgb(173, 0, 0) ;
+  background-color: #fff ;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-favorite:hover {
+  color: #fff;
+  background-color: rgb(190, 75, 75);
+}
+.btn-admin {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff ;
+  background-color: #494949 ;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-admin:hover, .btn-custom:hover {
+  color: #fff ;
+  background-color:#797979;
+}
+h5{ 
+  height:48px;
+}
+.checked {
+  color: orange;
+}
+#sidebarfrist {
+  background-image: url("https://i.pinimg.com/736x/e2/a6/c1/e2a6c1ba6bd7287ac3b62030eb5d1489.jpg");
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+#sidebarfrist h3 {
+  margin: 20px 30px auto auto;
+  font-weight: 600;
+  color: #ffffff;
+}
+#box .btn {
+  margin: 5px;
+}
+#sidebar {
+  background-color: rgba(245, 245, 245, 0.705);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+#sidebar h3 {
+  margin: 20px 20px auto auto;
+  font-weight: 600;
+  color: #424242;
+}
+#sidebar #box {
+  border-left: 5px solid #494949;
+  padding: 5px 5px 10px 10px;
+  text-align: center;
+}
+#box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  /* color: #01152F; */
+  color: #fff;
+  background-color: #494949;
+  font-weight: 600;
+}
+.list-group-flush .list-group-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  background-color: #F8F8F8;
+}
+#sidebar a {
+  color: black !important;
+}
