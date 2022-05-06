@@ -21,7 +21,6 @@ include __DIR__ . '/../functions.php'; ?><!doctype html>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/6.1.1/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/9ba9acccf1.js" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="js/header.js"></script>
 	<script type="text/javascript" src="js/footer.js"></script>
 	<title><?php
 	if (defined('TITLE')) {
@@ -89,14 +88,18 @@ include __DIR__ . '/../functions.php'; ?><!doctype html>
 		<?php
 			
 			if (isset($_SESSION['username']) && $_SESSION['username']){
-				echo '<div class="dropdown">
-				<a type="button" class="btn  position-relative" id="dropdownMenuCart" data-bs-toggle="dropdown" aria-expanded="false">
-				<i class="fa fa-shopping-cart iconheader" aria-hidden="true"></i>
+				echo '<div class="dropdown"><a type="button" class="btn  position-relative" id="dropdownMenuCart" data-bs-toggle="dropdown" aria-expanded="false">
+				<i class="fa fa-shopping-cart iconheader" aria-hidden="true"></i>';
+				
+			  if (!is_administrator()) {
+					
+				echo'
 				  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-					  99+
-					 
 				  </span>
-			  </a>
+			  	';
+				
+				}
+			  echo '</a>
 			  <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuCart">
 			  <li><a type="button" class="btn  position-relative" href="cart.php"><i class="fa-solid fa-circle-info"></i></a></li>
 			  </ul>
