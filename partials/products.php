@@ -36,7 +36,7 @@
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star"></span>
-                                        <div class="price" name="price">'. number_format($row['price'],0,3).' VNĐ</div>
+                                        <div class="price" name="price">'. number_format($row['price'],0,3,".").' VNĐ</div>
                                         <div class="row">
                                             <div class="col-6">
                                                 <a class="btn-favorite"><i class="fa fa-heart-o">Yêu Thích</i></a>
@@ -83,7 +83,7 @@
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star"></span>
-                                        <div class="price" name="price">'. number_format($row['price'],0,3).' VNĐ</div>
+                                        <div class="price" name="price">'. number_format($row['price'],0,3,".").' VNĐ</div>
                                         <div class="row">
                                             <div class="col-6">
                                                 <a class="btn-favorite"><i class="fa fa-heart-o">Yêu Thích</i></a>
@@ -130,7 +130,7 @@
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star"></span>
-                                        <div class="price" name="price">'. number_format($row['price'],0,3).' VNĐ</div>
+                                        <div class="price" name="price">'. number_format($row['price'],0,3,".").' VNĐ</div>
                                         <div class="row">
                                             <div class="col-6">
                                                 <a class="btn-favorite"><i class="fa fa-heart-o">Yêu Thích</i></a>
@@ -178,7 +178,7 @@
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star"></span>
-                                        <div class="price" name="price">'. number_format($row['price'],0,3).' VNĐ</div>
+                                        <div class="price" name="price">'. number_format($row['price'],0,3,".").' VNĐ</div>
                                         <div class="row">
                                             <div class="col-6">
                                                 <a class="btn-favorite"><i class="fa fa-heart-o">Yêu Thích</i></a>
