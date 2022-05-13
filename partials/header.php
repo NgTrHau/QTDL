@@ -70,8 +70,7 @@ include __DIR__ . '/../functions.php'; ?><!doctype html>
 
 			echo '	<div class="dropdown">
 			<a class="btn colorwhite"  type="button" id="dropdownMenuButton0" data-bs-toggle="dropdown" aria-expanded="false">
-			<i class="fa-solid fa-bell iconheader"></i> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-			99+</span></a>';
+			<i class="fa-solid fa-bell iconheader"></i> </a>';
 		if (isset($_SESSION['username']) && $_SESSION['username']){	
 			echo '
 			<ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton0">
@@ -91,14 +90,14 @@ include __DIR__ . '/../functions.php'; ?><!doctype html>
 				echo '<div class="dropdown"><a type="button" class="btn  position-relative" id="dropdownMenuCart" data-bs-toggle="dropdown" aria-expanded="false">
 				<i class="fa fa-shopping-cart iconheader" aria-hidden="true"></i>';
 				
-			  if (!is_administrator()) {
+			//   if (!is_administrator()) {
 					
-				echo'
-				  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-				  </span>
-			  	';
+			// 	echo'
+			// 	  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+			// 	  </span>
+			//   	';
 				
-				}
+			// 	}
 			  echo '</a>
 			  <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuCart">
 			  <li><a type="button" class="btn  position-relative" href="cart.php"><i class="fa-solid fa-circle-info"></i></a></li>

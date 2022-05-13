@@ -2,12 +2,10 @@
 
     define('TITLE', 'Chi tiết');
     include '../partials/header.php';
-    
-    if (isset($_GET['id']) && ($_GET['id'] > 0) ) {
+    include '../partials/mysqli_connect.php';
+    if (isset($_GET['id'])) {
        
-?>
-<?php
-        include '../partials/mysqli_connect.php';
+        
         $query = "SELECT * FROM products WHERE proID ='{$_GET['id']}'";
                     if ($result = mysqli_query($dbc, $query)){
                         
@@ -23,7 +21,7 @@
                                     </div>
                                     <div class="col-lg-6 container-fluid">
                                         <h2>'.$row['proName'].'</h2>
-                                        <p class="h4">'.number_format($row['price'],0,3).'đ</p>
+                                        <p class="h4">'.number_format($row['price'],0,3).' đ</p>
                                         <p>'.$row['proDes'].'</p>
                                         <ol class="list-group list-group-numbered">
                                           <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -60,7 +58,9 @@
                                         <button class="btn-favorite"><i class="fa fa-heart-o">Yêu Thích</i></button>
                                     </div>
                                     <div class="col-6">
-                                    <a href="checkout.php?id='.$row['proID'].'"  id="btn-cart" class="btn-custom"><i class="fa-solid fa-cart-shopping"></i>Đặt Hàng</a>
+                                    <form class="form-horizontal" method="post" action="cart.php?action=addcart&id='.$row['proID'].'">
+                                    <button type="submit" name="addcart"  class="btn-custom "><i class="fa-solid fa-cart-shopping"></i>Đặt Hàng</button>
+                                    </form>
                                     </div>
                                             
                                       </div>

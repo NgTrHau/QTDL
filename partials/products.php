@@ -2,10 +2,7 @@
     <?php
 
     include '../partials/mysqli_connect.php';
-    
-  
 ?>
-   
     <section class="company">
         <div>
             <h3>Apple</h3>

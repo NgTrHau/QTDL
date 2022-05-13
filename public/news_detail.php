@@ -1,7 +1,7 @@
 <?php
     define('TITLE', 'Tin Tức');
     include '../partials/header.php';
-    if (isset($_GET['id']) && ($_GET['id'] >= 0) ) {
+    if (isset($_GET['id']) ) {
         include '../partials/mysqli_connect.php';
         $query = "SELECT * FROM news WHERE nID ='{$_GET['id']}'";
                     if ($result = mysqli_query($dbc, $query)){

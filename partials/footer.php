@@ -58,7 +58,7 @@
                 
                 </div>
                 <div class="row text-center d-flex align-items-center justify-content-center" style="background-color:rgb(238, 238, 238)">
-                    CT275 HK1 2021-2022
+                    CT46702 HK1 2021-2022
                 
                 </div>
         </div>

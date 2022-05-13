@@ -63,7 +63,7 @@ echo '<div class="container skin-light">
           <th scope="col" style="text-align: center;">
               Giá
           </th>
-          <th scope="col" style="text-align: center;">
+          <th scope="col" style="text-align: center; width:202px;">
               Thành Tiền
           </th>
           <th scope="col">
@@ -91,12 +91,12 @@ echo '<div class="container skin-light">
                         <input class="iquantity" type="number" onchange="subTotal()" value="'.$value['quantity'].'" min="1" max="100">
                     </td>
                     <td scope="col" style="text-align: center;">
-                        '.number_format($value['price'],0,3,".").'
+                        '.number_format($value['price'],0,3,".",).'
                         <input class="iprice" type="hidden" value="'.$value['price'].'">
                         
                     </td>
-                    <td scope="col" class="itotal" style="text-align: center;">
-                        '.number_format($value['price']*$value['quantity'],0,3,".").'
+                    <td scope="col" class="itotal" style="text-align: center;width:202px;">
+                         <p style="font-weight: italic;">'.number_format($value['price']*$value['quantity'],0,3,".").' đ</p>
                     </td>
                     <td scope="col">
                         <a href="cart.php?action=remove&id='.$value['id'].'">
@@ -112,8 +112,8 @@ echo '<div class="container skin-light">
         <tfoot scope="col"> 
         <tr>
             <td scope="col" colspan="3"></td>
-            <td scope="col" style="text-align: center;">Tổng tiền</td>
-            <td id="gtotal" scope="col" style="font-weight:bold;text-align: center;">'.number_format($total,0,3,".").'</td>
+            <td scope="col" style="text-align: center;font-weight:bold;">Tổng tiền</td>
+            <td id="gtotal" scope="col" style="font-weight:bold;text-align: center;"><p style="font-weight: italic;margin: 0px;">'.number_format($total,0,3,".").' đ</p></td>
             <td scope="col" >
             <a href="cart.php?action=clearall">
             <button width="100px" class="btn-custom">Xóa hết</button>
@@ -155,19 +155,22 @@ include '../partials/footer.php';
 ?>
 <script>
     var gt = 0;
-    var iquantity =document.getElementsByClassName('iquantity')
+    var iquantity =document.getElementsByClassName('iquantity');
     var iprice =document.getElementsByClassName('iprice');
     var itotal =document.getElementsByClassName('itotal');
     var gtotal =document.getElementById('gtotal');
     function subTotal() {
         for(i=0;i<iprice.length;i++) {
             
-            itotal[i].innerText=(iprice[i].value)*(iquantity[i].value) ;
-            
+            itotal[i].innerText=((iprice[i].value)*(iquantity[i].value)).toLocaleString("vi-VN", {
+                style: "currency",
+                currency: "VND",
+            });
             gt+=(iprice[i].value)*(iquantity[i].value);
         }
-        gtotal.innerText=gt;
+        gtotal.innerText=gt.toLocaleString("vi-VN", {
+                style: "currency",
+                currency: "VND",
+            });
     }
 </script>
-<!-- '.number_format($value['price']*$value['quantity'],0,3).' -->
-<!-- '.number_format($total,0,3).' -->

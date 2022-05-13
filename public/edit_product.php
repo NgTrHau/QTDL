@@ -50,7 +50,7 @@ if (isset($_GET['id'])) {
                 <label>Giá</label>
                 <input type="number" name="price"  class="form-control mb-2" value="' . $row['price'] . '">
             </div>
-            <input class="btn-custom w-25" name="id" type="hidden" value="' .$_GET['id'] . '">
+            <input class="btn-custom w-25" name="id" type="hidden" value="' .$row['proID'] . '">
             <input class="btn-custom w-25" type="submit" name="submit" value="Sửa sản phẩm này!">
             </form>';
         }

@@ -11,7 +11,7 @@ if (isset($_POST['dangnhap']))
 
     $username = addslashes($_POST['txtUsername']);
     $password = addslashes($_POST['txtPassword']);
-    $loggedin = false;
+    // $loggedin = false;
 
     
      
@@ -47,7 +47,7 @@ if (isset($_POST['dangnhap']))
     }
      
     $_SESSION['username'] = $username;
-    $loggedin = true;
+    // $loggedin = true;
    
     header("Refresh:0; url=index.php");
     
