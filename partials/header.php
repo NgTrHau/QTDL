@@ -84,10 +84,11 @@ include __DIR__ . '/../functions.php'; ?><!doctype html>
 		?>
 	  </div>
 	  <div class="d-flex mx-1">
+	  <!-- id="dropdownMenuCart" data-bs-toggle="dropdown" aria-expanded="false" -->
 		<?php
 			
 			if (isset($_SESSION['username']) && $_SESSION['username']){
-				echo '<div class="dropdown"><a type="button" class="btn  position-relative" id="dropdownMenuCart" data-bs-toggle="dropdown" aria-expanded="false">
+				echo '<div class="dropdown"><a href="cart.php" type="button" class="btn  position-relative" >
 				<i class="fa fa-shopping-cart iconheader" aria-hidden="true"></i>';
 				
 			//   if (!is_administrator()) {
